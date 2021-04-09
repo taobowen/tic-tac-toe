@@ -5,7 +5,8 @@ interface AppState {
     step: number,
     stepStack: String [] [],
     valueArr: String [],
-    isWin: Boolean
+    winnerIndex: number [] | undefined,
+    stepCoordinates: pieceData []
 }
 
 interface BoardProps {
@@ -13,12 +14,15 @@ interface BoardProps {
     step: Number,
     stepStack: String [] [],
     valueArr: String [],
+    winnerIndex: number [] | undefined,
     onClick: Function
 }
 
 interface SquareProps {
     value: String,
-    onClick: Function
+    onClick: Function,
+    winnerIndex: number [] | undefined,
+    squareIndex: number
 }
 
 // interface StepState {
@@ -27,5 +31,11 @@ interface SquareProps {
 
 interface HistoryProps {
     stepStack: String [] [],
-    chooseStep: Function
+    chooseStep: Function,
+    stepCoordinates: pieceData []
+}
+
+interface pieceData {
+    X: number,
+    Y: number
 }

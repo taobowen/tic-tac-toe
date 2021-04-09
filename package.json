@@ -1,5 +1,5 @@
 {
-  "name": "rx_demo",
+  "name": "tic_tac_toe",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
