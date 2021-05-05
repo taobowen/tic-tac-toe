@@ -10,9 +10,6 @@ interface AppState {
 }
 
 interface BoardProps {
-    next: String,
-    step: Number,
-    stepStack: String [] [],
     valueArr: String [],
     winnerIndex: number [] | undefined,
     onClick: Function

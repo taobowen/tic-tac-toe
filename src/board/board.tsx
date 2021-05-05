@@ -10,7 +10,6 @@ export default class Board extends React.Component <BoardProps, any> {
         let { winnerIndex } = this.props;
         return (
             <Square key={index} squareIndex={index} winnerIndex = {winnerIndex} value = {this.props.valueArr[index]} onClick = {() => this.props.onClick(index)}>
-
             </Square>
         )
     }
